@@ -5,12 +5,11 @@ int bulder(int x);
 int main(void)
 {
     int hight;
-    int space;
     do // this is for check while (condtions) of inpout
     {
         hight = get_int("Enter Hight : ");
     }
-    while (hight < 1 && space < 1); // if inpuot not true return ask
+    while (hight < 1 || hight > 8); // if inpuot not true return ask
     bulder(hight); // call in bulder function
 }
 int bulder(int x)
