@@ -20,15 +20,19 @@ void check_type (long type)
 {
     long c = type;
     // check even or odd valu in the card nuber filde
+    /*
     int count_of_filed = 1;
     for(int i=0; i<c; i++)
     {
         c = c/10;
         count_of_filed++;
     }
+    */
+    int count_of_filed = 2;
     while (type >= 100)
     {
         type /= 10;
+        count_of_filed++; //this line = /* for(int i=0...)^ */
     }
     if(type == 34 || type == 37)
     {
@@ -61,7 +65,8 @@ int luhan(long c)
     //take end and be for end number in the varible and applay luhan algrthime
     int end_sum,b_end_sum; end_sum = b_end_sum = 0;
 
-    for(int i=0; i<c_valu+10; i++)
+    // for(int i=0; i<c_valu+10; i++) // this line = for(;c_valu;)
+    for(;c_valu;) //look up line ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     {
         int end = c_valu %10;
         c_valu = c_valu /10;
