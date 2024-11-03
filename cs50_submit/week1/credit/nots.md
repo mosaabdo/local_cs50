@@ -78,7 +78,7 @@ __in intger valu__
     x = x / 10
     printf("x = %i\n"); 
 ````
-the autbot is 
+the output is 
 >>..
 >>   $ ./ code
 >>
@@ -92,7 +92,7 @@ the autbot is
     x = x /10;
      printf("x = %i\n"); 
 ````
-the autbot is  
+the output is :
 >>..
 >>   $ ./ code
 >>
@@ -109,7 +109,7 @@ __in my code we use / for change c_valu evrey loop__
     x = x % 10
     printf("x = %i\n"); 
 ````
-the autbot is :
+the output is :
 >>..
 >>   $ ./ code
 >>
