@@ -1,0 +1,35 @@
+	N,R,S 10000    		N,R,S 50000		N,R,S5000
+------------------------------------------------------------------------
+  	N  : 0m0 .205s		N  : 0m8 .358s		N  : 0m0.056s
+Sort1	O  : 0m0 .242s		O  : 0m6 .674s		O  : 0m0.077s
+  	Ω  : 0m0 .64s		Ω  : 0m2 .234s		Ω  : 0m0.016s
+------------------------------------------------------------------------
+  	N  : 0m0 .036s		N  : 0m2 .140s		N  : 0m0.040s
+Sort2	O  : 0m0 .041s		O  : 0m2 .061s		O  : 0m0.034s
+  	Ω  : 0m0 .036s		Ω  : 0m1 .949s		Ω  : 0m0.045s
+------------------------------------------------------------------------
+  	N  : 0m0 .166s		N  : 0m4 .731s		N  : 0m0.043s
+Sort3	O  : 0m0. 131s		O  : 0m4.573s		O  : 0m0.040s
+  	Ω  : 0m0 .133s		Ω  : 0m4.268s		Ω  : 0m0.037s
+------------------------------------------------------------------------
+Implications 
+N,R,S = normal case, worst case, best case = random file, reverse sorted file, sorted file.
+
+Selection sort
+> O = O(n^2)
+> Ω = Ω(n^2)
+sort3 is selection sort.
+since the timings of the sort3 are equal in the best and worst cases, then the sort3 is selection sort.
+
+bubble sort
+> O = O(n^2)
+> Ω = Ω(n)
+sort1 is bubble sort.
+Since the sort timings are unequal in both the best and worst cases and are faster in the best case due to [O(n^2) and Ω(n)], sort 1 is a bubble sort.
+
+merge sort
+> O = O(n log n)
+> Ω = Ω(n log n)
+sort2 is merge sort.
+Since sort 2's timings are equal in both best and worst cases, and it is faster than selection sort due to [O(n log n) and Ω(n log n)], sort 2 is a merge sort.
+
