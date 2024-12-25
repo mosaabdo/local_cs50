@@ -56,11 +56,6 @@ int main(int argc, string argv[])
         {
             printf("Invalid vote.\n");
         }
-        else
-        {
-            // candidates[i].votes++;
-            vote(name);
-        }
     }
 
     // Display winner of election
@@ -86,35 +81,20 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    candidate equivalent[candidate_count];
-    int max_vote = 0, r_times = 0, checker = 0;
-    //compear candidates
-    for(int i = 1; i < candidate_count ; i++)
+    int max_votes = 0;
+
+    // select winner
+    for (int i = 0; i < candidate_count; i++)
     {
-        if(candidates[max_vote].votes < candidates[i].votes)
-            max_vote++;
-    } 
-// if have equivalent add equivalent in new array
-    for(int j = 1; j < candidate_count; j++)
-    {
-        if(candidates[r_times].votes == candidates[j].votes)
-        {
-            equivalent[r_times].name = candidates[r_times].name;
-            equivalent[r_times+1].name = candidates[j].name;
-            r_times++;
-            checker++;
-        }
+        if (candidates[i].votes > max_votes)
+            max_votes = candidates[i].votes;
     }
+
     // print winner
-    if( checker < 1)
-        printf("%s\n",candidates[max_vote].name);
-    
-    // if case is equivalent
-    else
+    for (int i = 0; i < candidate_count; i++)
     {
-        for(int k = 0; k < candidate_count; k++)
-        {
-            printf("%s\n",equivalent[k].name);
-        }
-    }   
+        if (candidates[i].votes == max_votes)
+            printf("%s\n", candidates[i].name);
+    }
+ 
 }
