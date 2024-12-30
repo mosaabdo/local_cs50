@@ -16,7 +16,7 @@ int candidate_count;
 bool vote(string name);
 void divided(candidate uns[], int start, int end);
 void marge(candidate uns[], int start, int end, int med);
-void find_winnre(void);
+void find_winnre(int max_vote, int s);
 int main(int argc, string argv[])
 {   
     if (argc < 2) {
@@ -34,7 +34,7 @@ int main(int argc, string argv[])
         candidates[i].votes = 0;
     }
 
-    int start = 0, end = candidate_count -1; 
+    int start = 0, end = candidate_count -1 ,s = 0; 
     int voter_count = get_int("Number of voters: ");
     for (int i = 0; i < voter_count; i++)
     {
@@ -43,7 +43,7 @@ int main(int argc, string argv[])
             printf("Invalid vote.\n");
     }
     divided(candidates, start, end);
-    find_winnre();
+    find_winnre(candidates[0].votes, s);
 }
 bool vote(string name)
 {
@@ -105,18 +105,16 @@ void marge(candidate uns[], int start, int end, int med)
 }
 
 
-void find_winnre (void)
-{
-    int max_vote = candidates[0].votes, i = 0;
-    
+void find_winnre (int max_vote, int s)
+{   
+    if(candidates[s+1].votes < max_vote)
+        printf("Winner is %s, %i\n", candidates[s].name, candidates[s].votes);
     //liner search
-    if(candidates[i+1].votes == max_vote)
-    {
-        for(; i < candidate_count; i++)
-            printf("Winner is %s, %i\n", candidates[i].name, candidates[i].votes);
-    }
     else
-        printf("Winner is %s, %i\n", candidates[0].name, candidates[0].votes);
+    {
+        find_winnre(max_vote, s+1);
+            printf("Winner is %s, %i\n", candidates[s].name, candidates[s].votes);
+    }
 }
 
 

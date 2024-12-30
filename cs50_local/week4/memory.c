@@ -9,7 +9,5 @@ int main(void)
     x[1] = 10;
     x[2] = 15;
 
-    for (int i = 0; i < MAX; i++)
-        printf("%i, %p\n",x[i], x[i]);
     free(x);
 }
