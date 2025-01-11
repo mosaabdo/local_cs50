@@ -147,6 +147,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 ---
 
 ## Edge Detection
+#### [Detailed](https://github.com/mosaabdo/local_cs50/blob/main/cs50_submit/week4/md/func_edg_fil_more.md)
 
 ### Purpose
 The `edges` function applies the Sobel operator to detect edges in an image. It computes gradients in the horizontal and vertical directions to identify regions of rapid intensity change.
