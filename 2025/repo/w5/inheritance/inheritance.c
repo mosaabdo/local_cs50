@@ -45,7 +45,7 @@ person *create_family(int generations)
         return NULL;
     }
     // If there are still generations left to create
-  if (generations > 1)
+    if (generations > 1)
     {
         new_person->parents[0] = create_family(generations - 1);
         new_person->parents[1] = create_family(generations - 1);
