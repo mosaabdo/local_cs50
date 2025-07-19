@@ -1,0 +1,4 @@
+1. Looking at the data in songs.db, it seems that the listener enjoys music that is fun, energetic, and easy to dance to. Many of the songs have high energy, danceability, and valence, which suggests that they prefer upbeat songs that create a happy vibe. This kind of playlist makes me think the person likes music that lifts the mood and keeps things lively.
+
+2. Still, just using the average of energy, danceability, and valence might not tell the full story. Some songs might be very different from the rest and affect the average in a weird way. Also, this method doesn’t consider the type of music, the lyrics, or how often each song was played. A better way could be to look at the most played songs, include genres, or even analyze the mood of the lyrics to better understand what the person really enjoys.
+
