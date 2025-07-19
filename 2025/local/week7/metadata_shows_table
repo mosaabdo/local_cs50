@@ -1,0 +1,8 @@
+tables, 	class
+
+genres,		[show_id, genre,]
+people,		[id, neme, birth]
+ratings,	[show_id, ratingm votes]
+shows,		[id, title, year, episodes]
+stars,		[show_id, person_id]
+writers,	[show_id, person_id]
