@@ -1,0 +1,77 @@
+/* أساسيات لتثبيت الفوتر أسفل الصفحة */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* الرأس */
+header {
+    background-color: #080137;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* المحتوى الرئيسي */
+main {
+    position:relative;
+    flex: 1;
+    padding: 20px;
+    margin: 3%;
+}
+
+/* نموذج المستخدم */
+.user_form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #080137;
+}
+
+.user_form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.user_form input[type="text"],
+.user_form input[type="email"],
+.user_form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user_form button {
+    background-color: #080137;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user_form button:hover {
+    background-color: green;
+}
+
+/* الفوتر */
+footer {
+    background-color: #080137;
+    color: white;
+    text-align: center;
+}

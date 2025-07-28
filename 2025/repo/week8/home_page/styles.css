@@ -1,0 +1,146 @@
+/*      header       */
+header{
+    text-align: center;
+    display: block;
+    padding: 0px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color:#080137;
+    
+}
+.header_image{
+    background-color:transparent;
+}
+.header_image img{
+    width: 15%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*      nav       */
+nav{
+    display: flex;
+    justify-content: space-between; /* يفصلهم الطرفين */
+    align-items: center;
+    padding: 10px 0 ;
+    margin: 0;
+    background-color:#1c135a;
+
+}
+nav a:hover{
+    color:rgb(67, 61, 148);
+}
+.nav_container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fefefe;
+    font-size: 16pt;
+    margin-left: 20px;
+}
+.nav_search{
+    text-align: right;
+    margin-right: 20px;
+}
+.nav_search input, button{
+    border: 20px;
+    border-radius: 5px;
+}
+.nav_search img{
+    height: 16px;
+    width: 16px;
+}
+.nav_links{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    gap: 30px;
+}
+.nav_links a{
+    color: #fefefe;
+}
+/*      main       */
+body{
+    background-image: url('image/bck_g.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hom_p_i{
+    opacity: 0.9;
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.bg_image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* لون غامق شفاف */
+    z-index: 0;
+}
+.hom_p_c{
+    position: relative;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.h_p_main_c{
+    color: #cdbecc;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mt{
+    background-color: transparent;
+    color: #f7f3f3;
+}
+.h_p_subject{
+    text-align: center;
+    background-color: transparent;
+}
+.s_h{
+    margin-left: auto;
+    padding: 40px;
+}
+.s_h:hover{
+    transform: translateY(-10px);
+    filter:contrast(1.0)
+}
+.s_c{
+    padding: 40px;
+}
+.s_c:hover{
+    transform: translateY(-10px);
+    filter:contrast(1.0)
+}
+.s_j{
+    margin-right: auto;
+    padding: 40px;
+}
+.s_j:hover{
+    transform: translateY(-10px);
+    filter:contrast(1.0)
+}
+/*      footer       */
+footer{
+    margin-bottom: 10;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9pt;
+    color: #fefefe;
+    background-color: #080137;
+}
